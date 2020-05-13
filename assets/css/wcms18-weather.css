@@ -1,0 +1,10 @@
+/**
+Styles for WCMS 18 weather widget
+*/
+
+.widget.widget_wcms18-weather-widget {
+    background-color: rgb(171, 194, 186);
+    border-radius: 20px;
+    text-align: center;
+    padding-bottom: 5px;
+}
