@@ -29,6 +29,7 @@ define('OWM_APP_ID', 'b7f6a4c736296c252ef8f51233222978');
         $current_weather['city'] = $data->name;
         $current_weather['country'] = $data->sys->country;
         $current_weather['conditions'] = $data->weather;
+        $current_weather['pressure'] = $data->main->pressure;
         
         // Return picked data to caller
     
