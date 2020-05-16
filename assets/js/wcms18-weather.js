@@ -26,16 +26,14 @@
                     
                     output += '<div class="conditions">';
                     weather.conditions.forEach(function(condition) {//foreach(weather->conditions as condition)
-                    output += '<p>City:' + weather.city + '</p>';
-                    output += '<p>Country:' + weather.country + '</p>';
+                    output += '<h1>City: ' + weather.city + '</h1>';                    
                     output += '<img src="http://openweathermap.org/img/w/' +condition.icon+'.png" alt="'+condition.main+'" title="'+condition.description+'">';
-
-                    });
-                    output += '</div>';
-
+                    output += '<strong>Airpressure:</strong>' + weather.pressure + '&nbsp;hpa<br>';
                     output += '<strong>Temperature:</strong> ' + weather.temperature + '&deg; C<br>';
                     output += '<strong>Humidity:</strong> ' + weather.humidity + '%<br>';
-
+                    output += '</div>';
+                });
+                    
                 } else {
                         if(response.data == 404) {
                             output += "Could not find current weather for city.";
