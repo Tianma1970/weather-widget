@@ -31,6 +31,7 @@
                     output += '<strong>Airpressure:</strong>' + weather.pressure + '&nbsp;hpa<br>';
                     output += '<strong>Temperature:</strong> ' + weather.temperature + '&deg; C<br>';
                     output += '<strong>Humidity:</strong> ' + weather.humidity + '%<br>';
+                        output += '<strong>Wind direction:&nbsp;</strong>' + weather.deg;
                     output += '</div>';
                 });
                     
